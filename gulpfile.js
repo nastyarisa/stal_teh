@@ -71,13 +71,13 @@ gulp.task("serve", function() {
     server: "build/"
   });
   gulp.watch("less/**/*.less", ["less"]);
-  gulp.watch("*.html", ["html"]);
+  gulp.watch("pug/**/*.pug", ["pug"]);
   gulp.watch("js/**/*.js", ["compress"]);
 });
 
 gulp.task("copy", function() {
   return gulp.src([
-    "fonts/**/*.{woff,woff2}",
+    "fonts/**/*.{ttf}",
     "img/**"
   ], {
     base: "."

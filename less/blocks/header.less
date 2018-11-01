@@ -1,0 +1,43 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: @lightgray;
+}
+
+.header__logo {
+  text-transform: uppercase;
+  color: @black;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.header__item {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 24px;
+  font-weight: normal;
+  a {
+    color: @black;
+    &:hover {
+      color: @basecolor;
+    }
+  }
+}
