@@ -6,6 +6,31 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="css/style.css")
     title Сталь-Технология
-  body
+  body#contacts
     include modules/header
-    h1 Контакты
+    main.contacts
+      .wrapper
+        .contacts__block
+          .contacts__info
+            h2.contacts__title Контактная информация:
+            p.contacts__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolores commodi totam incidunt ad harum ratione adipisci distinctio eaque magnam, quae, iusto ducimus tempore praesentium voluptas mollitia ut aliquid veritatis?
+            ul.contacts__list
+              li.contacts__item
+                b Адрес:
+                address 144001 Московская обл. г.Электросталь Строительный пер., д.5 
+              li.contacts__item
+                b Email:
+                a(href='mailto:stal.teh@mail.ru').contacts__email stal.teh@mail.ru
+              li.contacts__item
+                b Телефон:
+                ul.contacts__phone-list
+                  li.contacts__phone-item
+                    a(href='tel:+79099457539').contacts__phone 8 (909) 945-75-39
+                  li.contacts__phone-item
+                    a(href='tel:+74950185725').contacts__phone 8 (495) 018-57-25
+                  li.contacts__phone-item
+                    a(href='tel:+79852602924').contacts__phone 8 (985) 260-29-24
+          .contacts__form
+            include modules/form
+      .contacts__map
+    include modules/footer

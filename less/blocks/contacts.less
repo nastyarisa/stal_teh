@@ -1,0 +1,54 @@
+.contacts {
+  flex-grow: 1;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f5f5f5;
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__info {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contacts__form {
+  width: 100%;
+  max-width: 675px;
+}
+
+.contacts__title {
+  margin-bottom: 30px;
+}
+
+.contacts__description {
+  color: @gray;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts__list, .contacts__phone-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+
+  b {
+    font-size: 16px;
+    margin-right: 12px;
+    color: @black;
+  }
+  address, a {
+    font-style: normal;
+    color: @gray;
+  }
+}
