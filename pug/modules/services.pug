@@ -1,0 +1,27 @@
+.services
+  .wrapper
+    .services__block
+      .tabs__toggles
+        button.tabs__button.active Токарные работы
+        button.tabs__button Фрезерные работы
+        button.tabs__button Расточные работы
+        button.tabs__button Шлифовальные работы
+        button.tabs__button Сварочные работы
+        button.tabs__button Гибка металла
+        button.tabs__button Термическая обработка
+      .tabs__content
+        .tabs__content-block.active 
+          include articles/article_1
+        .tabs__content-block 
+          include articles/article_2
+        .tabs__content-block 
+          include articles/article_3
+        .tabs__content-block 
+          include articles/article_4
+        .tabs__content-block 
+          include articles/article_5
+        .tabs__content-block 
+          include articles/article_6
+        .tabs__content-block 
+          include articles/article_7
+script(src='js/tabs.js')

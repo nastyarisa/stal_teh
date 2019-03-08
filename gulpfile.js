@@ -2,6 +2,7 @@
 //npm i --save-dev gulp-csso gulp-rename gulp-imagemin gulp-webp run-sequence del gulp-uglify pump gulp-pug
 
 var gulp = require("gulp");
+var babel = require('gulp-babel');
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
@@ -13,12 +14,17 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var run = require("run-sequence");
 var del = require("del");
-var uglify = require("gulp-uglify");
-var pump = require('pump');
+const uglify = require('gulp-uglifyes');
+// var uglifyes = require('uglify-es');
+// var composer = require("gulp-uglify/composer");
+// var pump = require('pump');
+
+// var minify = composer(uglifyes, console);
+
 var pug = require('gulp-pug');
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('pug/*.pug')
+  return gulp.src('pug/**/*.pug')
   .pipe(pug({
     pretty:true
   }))
@@ -56,15 +62,13 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("img"));
 });
 
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src("js/**/*.js"),
-        uglify(),
-        gulp.dest("build/js")
-    ],
-    cb
-  );
-});
+function es(){
+  return gulp.src('js/**/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
+}
+ 
+gulp.task('compress', es);
 
 gulp.task("serve", function() {
   server.init({

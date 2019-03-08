@@ -1,0 +1,44 @@
+.services {
+  flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: @lightgray;
+}
+
+.services__block {
+  display: flex;
+  // align-items: flex-start;
+}
+
+.tabs__toggles {
+  display: flex;
+  min-width: 300px;
+  flex-direction: column;
+  border-right: 5px solid @basecolor;
+  margin-right: 50px;
+}
+
+.tabs__button {
+  padding: 20px 60px 20px 35px;
+  font-size: 18px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: rgb(31, 31, 31);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+  text-align: left;
+
+  &.active {
+    background-color: @basecolor;
+    color: #fff;
+  }
+}
+
+.tabs__content-block {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
