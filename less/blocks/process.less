@@ -1,15 +1,18 @@
 .process {
-  padding-top: 40px;
+  background-color: #e7e7e7;
+  padding-top: 70px;
   padding-bottom: 80px;
 }
 
 .process__block {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.process__text {
+  text-align: left;
 }
 
 .process__title {
@@ -23,18 +26,18 @@
 .process__description {
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
   color: @gray;
   font-weight: 500;
   margin: 0;
   margin-bottom: 40px;
+  // max-width: 350px;
+  padding-right: 100px;
 }
 
 .process__video-wrapper {
   display: block;
   position: relative;
-  width: 856px;
-  height: 481px;
+  width: 700px;
   z-index: 1;
 
   &::after {
@@ -56,4 +59,5 @@
 
 .work-process__video {
   border-radius: 5px;
+  width: 700px;
 }
