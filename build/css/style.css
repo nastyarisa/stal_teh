@@ -48,10 +48,10 @@ a {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #f5f5f5;
-}
-#contacts .header {
   background-color: #fff;
+}
+#index .header {
+  background-color: #f5f5f5;
 }
 .header__logo {
   text-transform: uppercase;
@@ -85,6 +85,9 @@ a {
   color: #1d1d1d;
 }
 .header__item a:hover {
+  color: #10c9c3;
+}
+.header__item .menu-item.active {
   color: #10c9c3;
 }
 .promo {
@@ -296,11 +299,38 @@ a {
   border-radius: 5px;
   width: 700px;
 }
+.company {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+}
+.equipment {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  background: #f9f9f9;
+}
+.equipment__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.equipment__item {
+  display: block;
+  max-width: 320px;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+.equipment__item img {
+  width: 250px;
+}
 .services {
   flex-grow: 1;
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
 }
 .services__block {
   display: flex;

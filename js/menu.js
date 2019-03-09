@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function(){
   menuItem.forEach((item)=> {
     let href = item.getAttribute('href');
     if (href.includes(page)) {
-      console.log(true, page)
       item.classList.add('active');
     }
   })

@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll(".menu-item"),t=document.body.getAttribute("data-page");e.forEach(e=>{e.getAttribute("href").includes(t)&&(console.log(!0,t),e.classList.add("active"))})});
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll(".menu-item"),t=document.body.getAttribute("data-page");e.forEach(e=>{e.getAttribute("href").includes(t)&&e.classList.add("active")})});
