@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("gallery");for(let e=1;e<=28;e++){t(`img/gallery/i${e}.jpg`)}function t(t){let n=document.createElement("img");n.src=t,n.classList.add("gallery__item"),e.appendChild(n)}});

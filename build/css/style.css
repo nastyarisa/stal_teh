@@ -380,6 +380,39 @@ a {
   line-height: 60px;
   letter-spacing: 0.01em;
 }
+.gallery__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gallery__item {
+  max-width: 18%;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+@media (max-width: 1000px) {
+  .gallery__item {
+    max-width: 22%;
+  }
+}
+@media (max-width: 768px) {
+  .gallery__item {
+    max-width: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery__item {
+    max-width: 45%;
+  }
+}
+@media (max-width: 400px) {
+  .gallery__item {
+    max-width: 90%;
+  }
+}
 .contacts {
   flex-grow: 1;
   padding-top: 40px;
