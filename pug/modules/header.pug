@@ -1,8 +1,14 @@
 header.header
   .wrapper
     nav.header__nav
-      a.header__logo.menu-item.active(href="index.html")
-        div.header__logo Сталь-Технология
+      div.header__wrapper-logo
+        button.burger
+          #burger
+            .bar.topBar
+            .bar.btmBar
+        .icon.icon-apple
+        a.header__logo.menu-item.active(href="index.html")
+          div.header__logo Сталь-Технология
       ul.header__list
         li.header__item
           a.menu-item(href="about.html") О нас

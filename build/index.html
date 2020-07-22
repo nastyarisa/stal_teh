@@ -10,8 +10,17 @@
   <body id="index" data-page="index">
     <header class="header">
       <div class="wrapper">
-        <nav class="header__nav"><a class="header__logo menu-item active" href="index.html">
-            <div class="header__logo">Сталь-Технология</div></a>
+        <nav class="header__nav">
+          <div class="header__wrapper-logo">
+            <button class="burger">
+              <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+              </div>
+            </button>
+            <div class="icon icon-apple"></div><a class="header__logo menu-item active" href="index.html">
+              <div class="header__logo">Сталь-Технология</div></a>
+          </div>
           <ul class="header__list">
             <li class="header__item"><a class="menu-item" href="about.html">О нас</a></li>
             <li class="header__item"><a class="menu-item" href="services.html">Услуги</a></li>
@@ -58,25 +67,20 @@
         </ul>
       </div>
     </div>
-    <div class="process">
-      <div class="wrapper">
-        <div class="process__block">
-          <div class="process__text">
-            <h1 class="process__title">Процесс работы</h1>
-            <p class="process__description">Видеопроцесс металообработки выглядит действительно впечатляюще! Посмотрите короткое видео о том, как обрабатываются наши детали.</p>
-          </div>
-          <div class="process__video-wrapper"><img class="work-process__video" src="./img/video.png"/></div>
-        </div>
-      </div>
+    <!--include modules/process-->
+    <div class="map">
+      <div id="google-map" style="width: 100%; height: 100%"></div>
     </div>
+    <script src="js/map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTQjatCqlyEhiYfMzuGrVw-CjdyiFHBts&amp;signed_in=true&amp;callback=initMap" async="async" defer="defer"></script>
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__block">
           <div class="footer__name"><a class="footer__logo" href="index.html">
-              <div class="footer__logo">Сталь-Технология</div></a>
+              <div>Сталь-Технология</div></a>
             <div class="footer__copyright">&copy; 2019</div>
           </div>
-          <div class="footer__contacts"><a class="footer__email" href="mailto:stal.teh@mail.ru">stal.teh@mail.ru</a><a class="footer__phone" href="tel:+79099457539">8 (909) 945-75-39</a><a class="footer__phone" href="tel:+74950185725">8 (495) 018-57-25</a><a class="footer__phone" href="tel:+79852602924">8 (985) 260-29-24</a></div>
+          <div class="footer__contacts"><a class="footer__email" href="mailto:stal.teh@mail.ru">stal.teh@mail.ru</a><a class="footer__phone" href="tel:+79099457539">8 (977) 966-40-38 - офис</a><a class="footer__phone" href="tel:+79099457539">8 (909) 945-75-39</a><a class="footer__phone" href="tel:+74950185725">8 (495) 018-57-25</a><a class="footer__phone" href="tel:+79852602924">8 (985) 260-29-24</a></div>
           <div class="footer__menu">
             <ul class="footer__list">
               <li class="footer__item"><a href="about.html">О нас</a></li>

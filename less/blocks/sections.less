@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-template-rows: auto;
-  grid-auto-rows: 20px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-content: center;
@@ -28,6 +27,7 @@
   background-size: contain;
   background-position: center center;
   transition: 0.5s;
+  background-color: #393e40;
 
   &:hover {
     filter:  contrast(0.5) brightness(1);
@@ -64,5 +64,13 @@
   
   &:hover {
     color: #fff;
+  }
+}
+
+@media(max-width: 768px) {
+  .sections__item {
+    max-height: 120px;
+    background-size: cover;
+    width: auto;
   }
 }

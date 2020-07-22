@@ -8,4 +8,13 @@ document.addEventListener("DOMContentLoaded", function(){
       item.classList.add('active');
     }
   })
+
+
+  let burger = document.querySelector('.burger'),
+    header = document.querySelector('.header');
+
+  burger.onclick = function() {
+    header.classList.toggle('menu-opened');
+  }
 });
+

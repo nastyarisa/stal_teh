@@ -2,6 +2,7 @@
   min-height: 150px;
   padding-top: 90px;
   padding-bottom: 150px;
+  background-color: #393e40;
   background-image: url("../img/bg_4.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
@@ -34,4 +35,19 @@
 
 .promo__link {
   .btn();
+}
+
+@media(max-width: 768px) {
+  .promo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .promo__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
 }

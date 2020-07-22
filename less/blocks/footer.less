@@ -13,6 +13,7 @@
 }
 
 .footer__logo {
+  display: block;
   text-transform: uppercase;
   color: #fff;
   font-weight: 300;
@@ -49,5 +50,26 @@
   a {
     color: #fff;
     font-size: 16px;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer__block {
+    display: block;
+    padding: 0 30px;
+    line-height: 1.6em;
+  }
+  .footer__name, .footer__contacts, .footer__menu {
+    margin-bottom: 20px;
+  }
+  .footer__email, .footer__phone {
+    line-height: 1.8em;
+  }
+  .footer__name {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__logo {
+    margin-right: 15px;
   }
 }

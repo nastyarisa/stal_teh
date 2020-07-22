@@ -25,13 +25,15 @@ html(lang="en")
                 b Телефон:
                 ul.contacts__phone-list
                   li.contacts__phone-item
+                    a(href='tel:+79099457539').contacts__phone 8 (977) 966-40-38 - офис
+                  li.contacts__phone-item
                     a(href='tel:+79099457539').contacts__phone 8 (909) 945-75-39
                   li.contacts__phone-item
                     a(href='tel:+74950185725').contacts__phone 8 (495) 018-57-25
                   li.contacts__phone-item
                     a(href='tel:+79852602924').contacts__phone 8 (985) 260-29-24
-          .contacts__form
-            include modules/form
+          //.contacts__form
+          //  include modules/form
       .contacts__map
         include modules/map
     include modules/footer
