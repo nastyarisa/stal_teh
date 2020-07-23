@@ -3,6 +3,10 @@
   padding-bottom: 30px;
   // background-color: @lightgray;
   background-color: #fff;
+  @media(min-width:768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 #index .header {
@@ -72,6 +76,7 @@
     z-index: 1;
     //background-color: rgba(1,1,1,0.93);
     background-color: @basecolor;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     .header__logo, .header__item a {
       color: #fff;
     }
@@ -240,5 +245,12 @@
         transition-delay: 0.3s;
       }
     }
+  }
+}
+
+@media (max-width: 360px) {
+  .header__logo {
+    margin-right: 10px;
+    font-size: 22px;
   }
 }

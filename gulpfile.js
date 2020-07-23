@@ -3,7 +3,7 @@
 
 const {gulp, src, dest, parallel, series, watch } = require('gulp');
 // const gulp = require("gulp");
-// const babel = require('gulp-babel');
+const babel = require('gulp-babel');
 const less = require("gulp-less");
 const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
@@ -64,6 +64,9 @@ function webP() {
 
 function compress() {
   return src('js/**/*.js')
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
   .pipe(uglify())
   .pipe(dest('build/js'));
 }

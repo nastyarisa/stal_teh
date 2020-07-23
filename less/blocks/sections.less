@@ -20,6 +20,7 @@
 .sections__item {
   display: flex;
   justify-content: center;
+  justify-self: center;
   align-items: center;
   width: 290px;
   height: 290px;
@@ -69,8 +70,15 @@
 
 @media(max-width: 768px) {
   .sections__item {
-    max-height: 120px;
+    max-height: 150px;
     background-size: cover;
-    width: auto;
+    //width: auto;
+  }
+}
+/* IE10+ CSS styles */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sections__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

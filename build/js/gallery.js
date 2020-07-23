@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("gallery");for(let e=1;e<=28;e++){t(`img/gallery/i${e}.jpg`)}function t(t){let n=document.createElement("img");n.src=t,n.classList.add("gallery__item"),e.appendChild(n)}});
+"use strict";document.addEventListener("DOMContentLoaded",function(){for(var e=document.getElementById("gallery"),t=1;t<=28;t++){n("img/gallery/i".concat(t,".jpg"))}function n(t){var n=document.createElement("img");n.src=t,n.classList.add("gallery__item"),e.appendChild(n)}});
