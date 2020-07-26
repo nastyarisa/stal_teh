@@ -5,8 +5,15 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="css/external/lightgallery.css")
+    script(defer=true, src='js/external/jquery.min.js')
+    script(defer=true, src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js')
+
     title Сталь-Технология
   body(data-page='works')
     include modules/header
     include modules/gallery
     include modules/footer
+    //script(src='js/external/lightgallery-all.min.js', defer)
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/js/lightgallery-all.min.js", defer)
+    script(src='js/gallery.js', defer=true)

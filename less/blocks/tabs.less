@@ -71,6 +71,7 @@
   .tabs__button {
     display: none;
     background: #fff;
+    transition: opacity 2s ease-out, background 1s ease-out;
     &:hover {
       cursor: pointer;
     }
@@ -92,13 +93,12 @@
   }
   .tabs__button.active {
     border-bottom: none;
-  }
-  .tabs__button.active {
     display: block;
   }
   .tabs__toggles.tabs-open {
     .tabs__button {
       display: block;
+      transition: all 1s ease-out, background 1s ease-out;
     }
     .tabs__button::after {
       display: none;

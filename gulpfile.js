@@ -103,11 +103,20 @@ function serve() {
 function copy() {
   return src([
     "fonts/**/*.{ttf}",
-    "img/**"
+    "fonts/**/*.{woff}",
+    "fonts/**/*.{eot}",
+    "fonts/**/*.{svg}",
+    "img/**",
+    "css/external/**"
   ], {
     base: "."
   })
   .pipe(dest("build"));
+};
+
+function fonts() {
+  return src('fonts/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(dest('build/fonts/'));
 };
 
 
@@ -117,7 +126,7 @@ function clean() {
 
 
 // const serve = parallel(watchFiles, browserSync);
-const build = series(clean, html, copy, css, compress);
+const build = series(clean, html, copy, css, compress, fonts);
 
 exports.clean = clean;
 exports.copy = copy;
@@ -126,5 +135,6 @@ exports.webP = webP;
 exports.images = images;
 exports.css = css;
 exports.html = html;
+exports.fonts = fonts;
 exports.serve = serve;
 exports.default = build;

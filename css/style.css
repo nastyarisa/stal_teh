@@ -82,6 +82,7 @@ a {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: flex-end;
+  padding: 0;
 }
 .header__item {
   text-transform: uppercase;
@@ -676,6 +677,7 @@ a {
   .tabs__button {
     display: none;
     background: #fff;
+    transition: opacity 2s ease-out, background 1s ease-out;
   }
   .tabs__button:hover {
     cursor: pointer;
@@ -695,12 +697,11 @@ a {
   }
   .tabs__button.active {
     border-bottom: none;
-  }
-  .tabs__button.active {
     display: block;
   }
   .tabs__toggles.tabs-open .tabs__button {
     display: block;
+    transition: all 1s ease-out, background 1s ease-out;
   }
   .tabs__toggles.tabs-open .tabs__button::after {
     display: none;
@@ -728,34 +729,12 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: flex-start;
 }
 .gallery__item {
-  max-width: 18%;
-  width: 100%;
   height: auto;
   margin: 10px;
-}
-@media (max-width: 1000px) {
-  .gallery__item {
-    max-width: 22%;
-  }
-}
-@media (max-width: 768px) {
-  .gallery__item {
-    max-width: 30%;
-  }
-}
-@media (max-width: 600px) {
-  .gallery__item {
-    max-width: 45%;
-  }
-}
-@media (max-width: 400px) {
-  .gallery__item {
-    max-width: 90%;
-  }
 }
 @media (max-width: 768px) {
   .gallery {
